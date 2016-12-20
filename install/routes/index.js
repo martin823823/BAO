@@ -28,11 +28,6 @@ var cookie2 = ''
 var cookie3 = ''
 var ticket = ''
 var username = "41403245" ;
-//var username = "41403245" ;
-//var password = "823305" ;
-//
-//var username = "31501334" ;
-//var password = "726142" ;
 
 var lt = '';
 var _eventId = 'submit';
