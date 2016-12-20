@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/html">
+
+<body>
+   <h2>
+       <select id="select_id">
+           <option value="7647">Excel在财务中的应用Ⅰ_专</option>
+           <option value="9798">大数据时代的信息分析专题_专</option>
+           <option value="7651">金融市场与金融业务基础_专</option>
+       </select>
+   </h2>
+   <h2> <input id="subject"  placeholder="主题"></h2>
+   <h2> <textarea id="comment"  placeholder="内容" rows="3"></textarea></h2>
+    <h2> <button type="submit"  onclick="select()">提交</button></h2>
+
+</body>
+</html>
+<script type="text/javascript" src="javascripts/jquery-1.10.1.min.js">
+
+</script>
+<script type="text/javascript">
+    function select() {
+
+        var getValue = $("#select_id").val();
+        var getContent = $("#comment").val();
+        var getTitle = $("#subject").val();
+
+        var data = {"selectVal": getValue,"getContent":getContent,"getTitle":getTitle};
+        $.ajax({
+            url: '/getSubject',
+            type: 'post',
+            data:  data,
+            success: function(data, status) {
+                location.href = "/tf"
+            },
+            error: function(data, status) {
+
+            }
+        });
+    }
+</script>
+
