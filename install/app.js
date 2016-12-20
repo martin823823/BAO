@@ -1,24 +1,4 @@
-//var request = require('request');
-//
-//request
-//    .post('http://urp.tf-swufe.net:8080/cas/login?service=http://spoc.tfswufe.edu.cn/Home/Login')
-//    .send({ username: '41403245', password: '823305' })
-//    .set('X-API-Key', 'foobar')
-//    .set('Accept', 'application/json')
-//    .end(function(res){
-//        if (res.ok) {
-//            alert('yay got ' + JSON.stringify(res.body));
-//        } else {
-//            alert('Oh no! error ' + res.text);
-//        }
-//    });
-//
-//request('http://www.google.com', function (error, response, body) {
-//    if (!error && response.statusCode == 200) {
-//        console.log(body) // 打印google首页
-//    }
-//})
-//
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
